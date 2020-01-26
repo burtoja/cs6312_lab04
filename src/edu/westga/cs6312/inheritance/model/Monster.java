@@ -30,6 +30,6 @@ public class Monster {
 	 * @return	a string listing the monster name and health
 	 */
 	public String toString() {
-		return "Monster Name: " + this.name + " Monster Health: " + this.health;
+		return "Monster Name: " + this.name + " -- Monster Health: " + this.health;
 	}
 }
