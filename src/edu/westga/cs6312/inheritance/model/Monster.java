@@ -28,8 +28,57 @@ public class Monster {
 	 * monster name and current health.
 	 * 
 	 * @return	a string listing the monster name and health
+	 * 
+	 * @precondition	none
 	 */
+	@Override
 	public String toString() {
 		return "Monster Name: " + this.name + " -- Monster Health: " + this.health;
 	}
+
+	/**
+	 * Method to get the name of the Monster
+	 * 
+	 * @return the name
+	 * 
+	 * @precondition	none
+	 */
+	public String getName() {
+		return this.name;
+	}
+
+	/**
+	 * Method to set the name of the Monster
+	 * 
+	 * @param name the name to set
+	 * 
+	 * @precondition	none
+	 */
+	public void setName(String name) {
+		this.name = name;
+	}
+
+	/**
+	 * Method to get the health of the Monster
+	 * 
+	 * @return the health
+	 * 
+	 * @precondition	none
+	 */
+	public int getHealth() {
+		return this.health;
+	}
+
+	/**
+	 * Method to set the helth of the Monster
+	 * 
+	 * @param health the health value to set
+	 * 
+	 * @precondition
+	 */
+	public void setHealth(int health) {
+		this.health = health;
+	}
+	
+	
 }
