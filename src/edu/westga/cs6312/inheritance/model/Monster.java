@@ -70,14 +70,16 @@ public class Monster {
 	}
 
 	/**
-	 * Method to set the helth of the Monster
+	 * Method to set the health of the Monster
 	 * 
 	 * @param health the health value to set
 	 * 
-	 * @precondition
+	 * @precondition	health >= 0
 	 */
 	public void setHealth(int health) {
-		this.health = health;
+		if (health >= 0) {
+			this.health = health;
+		}
 	}
 	
 	

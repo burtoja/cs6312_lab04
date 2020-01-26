@@ -6,6 +6,13 @@ import org.junit.jupiter.api.Test;
 
 import edu.westga.cs6312.inheritance.model.Monster;
 
+/**
+ * This will serve as the test class for the Monster constructor and toString
+ * 
+ * @author J. Allen Burton
+ * @version Jan 26, 2020
+ *
+ */
 class MonsterWhenCreateMonster {
 
 	/**
