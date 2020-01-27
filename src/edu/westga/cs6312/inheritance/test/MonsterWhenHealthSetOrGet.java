@@ -39,11 +39,28 @@ class MonsterWhenHealthSetOrGet {
 	 * Expected Result: 75
 	 */
 	@Test
-	void testMonsterSetHealthExpect75() {
+	void testMonsterSetHealthto75Expect75() {
 		Monster theMonster = new Monster("Carl", 100);
 		theMonster.setHealth(75);
 		int report = theMonster.getHealth();
 		assertEquals(75, report);
+	}
+	
+	/**
+	 * Test the setHealth method.  Make Monster with the following information 
+	 * set at creation then change the health to 0 using setHealth
+	 * and get its health using the getter:
+	 * Original Name: Carl
+	 * Health: 100
+	 * New Health: 0
+	 * Expected Result: 0
+	 */
+	@Test
+	void testMonsterSetHealthTo0Expect0() {
+		Monster theMonster = new Monster("Carl", 100);
+		theMonster.setHealth(0);
+		int report = theMonster.getHealth();
+		assertEquals(0, report);
 	}
 	
 	/**

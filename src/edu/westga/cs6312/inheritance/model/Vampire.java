@@ -53,5 +53,30 @@ public class Vampire extends Monster {
 		return super.toString() + " -- Pints Needed: " + this.pintsOfBloodNeeded;
 	}
 	
+	/**
+	 * Gets value of the pints of blood needed by the Vampire
+	 *
+	 * @precondition	none
+	 */
+	public int getPintsOfBloodNeeded() {
+		return this.pintsOfBloodNeeded;
+	}
+
+	/**
+	 * Method to set the value of pints of blood needed by Vampire.  If invalid value 
+	 * sent then value remains unchanged.
+	 *
+	 * @param pintsOfBloodNeeded the pintsOfBloodNeeded to set
+	 *
+	 * @precondition	pintsOfBloodNeeded >= 0 && pintsOfBloodNeeded <= 10
+	 */
+	public void setPintsOfBloodNeeded(int pintsOfBloodNeeded) {
+		if (pintsOfBloodNeeded >= 0 && pintsOfBloodNeeded <= 10) {
+			this.pintsOfBloodNeeded = pintsOfBloodNeeded;
+		}
+	}
+	
+	
+	
 
 }

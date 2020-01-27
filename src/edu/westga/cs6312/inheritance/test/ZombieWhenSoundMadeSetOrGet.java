@@ -6,7 +6,7 @@ import org.junit.jupiter.api.Test;
 
 import edu.westga.cs6312.inheritance.model.Zombie;
 
-class ZombieWhenSoundMadeSetorGet {
+class ZombieWhenSoundMadeSetOrGet {
 
 	/**
 	 * Test the getSoundMade method.  Make Zombie with the following information 
