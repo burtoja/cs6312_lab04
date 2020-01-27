@@ -9,10 +9,8 @@ import edu.westga.cs6312.inheritance.model.Zombie;
 class ZombieWhenCreateZombie {
 
 	/**
-	 * Test 3 parameter Zombie constructor using toString output.  Expected values:
-	 * Name: Bob
-	 * Health: 90
-	 * Sound: Meow
+	 * Test 3 parameter Zombie constructor using toString output. Expected values:
+	 * Name: Bob Health: 90 Sound: Meow
 	 *
 	 * @precondition
 	 */
@@ -22,12 +20,10 @@ class ZombieWhenCreateZombie {
 		String report = theZombie.toString();
 		assertEquals("Name: Bob -- Health: 90 -- Sound: Meow", report);
 	}
-	
+
 	/**
-	 * Test 2 parameter Zombie constructor using toString output.  Expected values:
-	 * Name: Bob
-	 * Health: 100
-	 * Sound: Meow
+	 * Test 2 parameter Zombie constructor using toString output. Expected values:
+	 * Name: Bob Health: 100 Sound: Meow
 	 *
 	 * @precondition
 	 */

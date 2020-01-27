@@ -9,10 +9,8 @@ import edu.westga.cs6312.inheritance.model.Vampire;
 class VampireWhenCreateVampire {
 
 	/**
-	 * Test of the 3 parameter constructor.  Values sent:
-	 * Name: Stan
-	 * Health: 90
-	 * Pints Needed: 4 
+	 * Test of the 3 parameter constructor. Values sent: Name: Stan Health: 90 Pints
+	 * Needed: 4
 	 */
 	@Test
 	void testNewVampireNameStanHealth90Pints4() {
@@ -20,14 +18,11 @@ class VampireWhenCreateVampire {
 		String report = theVampire.toString();
 		assertEquals("Name: Stan -- Health: 90 -- Pints Needed: 4", report);
 	}
-	
+
 	/**
-	 * Test of the 3 parameter constructor with invalid pints needed value (low).  
-	 * Values sent:
-	 * Name: Rob
-	 * Health: 85
-	 * Supplied Pints Needed: -4 
-	 * Expect Pints Needed: 0
+	 * Test of the 3 parameter constructor with invalid pints needed value (low).
+	 * Values sent: Name: Rob Health: 85 Supplied Pints Needed: -4 Expect Pints
+	 * Needed: 0
 	 */
 	@Test
 	void testNewVampireNameRobHealth85PintsNeg4() {
@@ -35,14 +30,11 @@ class VampireWhenCreateVampire {
 		String report = theVampire.toString();
 		assertEquals("Name: Rob -- Health: 85 -- Pints Needed: 0", report);
 	}
-	
+
 	/**
-	 * Test of the 3 parameter constructor with invalid pints needed value (high).  
-	 * Values sent:
-	 * Name: Gary
-	 * Health: 75
-	 * Supplied Pints Needed: 14 
-	 * Expect Pints Needed: 0
+	 * Test of the 3 parameter constructor with invalid pints needed value (high).
+	 * Values sent: Name: Gary Health: 75 Supplied Pints Needed: 14 Expect Pints
+	 * Needed: 0
 	 */
 	@Test
 	void testNewVampireNameGaryHealth75Pints14() {
@@ -50,13 +42,10 @@ class VampireWhenCreateVampire {
 		String report = theVampire.toString();
 		assertEquals("Name: Gary -- Health: 75 -- Pints Needed: 0", report);
 	}
-	
+
 	/**
-	 * Test of the 2 parameter constructor.  
-	 * Values sent:
-	 * Name: Jan
-	 * Health: 80
-	 * Expect Pints Needed: 0
+	 * Test of the 2 parameter constructor. Values sent: Name: Jan Health: 80 Expect
+	 * Pints Needed: 0
 	 */
 	@Test
 	void testNewVampireNameJanHealth80Pints5() {

@@ -16,10 +16,8 @@ import edu.westga.cs6312.inheritance.model.Monster;
 class MonsterWhenCreateMonster {
 
 	/**
-	 * Test Monster constructor using the toStringMethod output to verify
-	 * it was created correctly. Values used to create Monster: 
-	 * Name = Carl
-	 * Health = 100
+	 * Test Monster constructor using the toStringMethod output to verify it was
+	 * created correctly. Values used to create Monster: Name = Carl Health = 100
 	 */
 	@Test
 	void testCreateNewMonsterNamedCarlWith100Health() {
@@ -27,12 +25,10 @@ class MonsterWhenCreateMonster {
 		String report = theMonster.toString();
 		assertEquals("Name: Carl -- Health: 100", report);
 	}
-	
+
 	/**
-	 * Test Monster constructor using the toStringMethod output to verify
-	 * it was created correctly. Values used to create Monster: 
-	 * Name = Ned
-	 * Health = 50
+	 * Test Monster constructor using the toStringMethod output to verify it was
+	 * created correctly. Values used to create Monster: Name = Ned Health = 50
 	 */
 	@Test
 	void testCreateNewMonsterNamedNedWith50Health() {
@@ -40,13 +36,11 @@ class MonsterWhenCreateMonster {
 		String report = theMonster.toString();
 		assertEquals("Name: Ned -- Health: 50", report);
 	}
-	
+
 	/**
-	 * Test Monster constructor when value outsied precondition for health is supplied.
-	 * This test will use the toStringMethod output to verify
-	 * it was created correctly. Values used to create Monster: 
-	 * Name = Ned
-	 * Health = 50
+	 * Test Monster constructor when value outsied precondition for health is
+	 * supplied. This test will use the toStringMethod output to verify it was
+	 * created correctly. Values used to create Monster: Name = Ned Health = 50
 	 */
 	@Test
 	void testCreateNewMonsterNamedNedWithNeg50HealthExpect100Health() {
