@@ -13,14 +13,21 @@ public class Monster {
 	private int health;
 	
 	/**
-	 * Constructor for Monsters
+	 * Constructor for Monsters.  If health parameter is not valid, 
+	 * default value of 100 is used.
 	 * 
 	 * @param name	name of the monster
 	 * @param health	health level of the monster
+	 * 
+	 * @precondition health >= 0
 	 */
 	public Monster(String name, int health) {
 		this.name = name;
-		this.health = health;
+		if (health >= 0) {
+			this.health = health;
+		} else {
+			this.health = 100;
+		}
 	}
 	
 	/**
@@ -33,7 +40,7 @@ public class Monster {
 	 */
 	@Override
 	public String toString() {
-		return "Monster Name: " + this.name + " -- Monster Health: " + this.health;
+		return "Name: " + this.name + " -- Health: " + this.health;
 	}
 
 	/**

@@ -25,7 +25,7 @@ class MonsterWhenCreateMonster {
 	void testCreateNewMonsterNamedCarlWith100Health() {
 		Monster theMonster = new Monster("Carl", 100);
 		String report = theMonster.toString();
-		assertEquals("Monster Name: Carl -- Monster Health: 100", report);
+		assertEquals("Name: Carl -- Health: 100", report);
 	}
 	
 	/**
@@ -38,7 +38,21 @@ class MonsterWhenCreateMonster {
 	void testCreateNewMonsterNamedNedWith50Health() {
 		Monster theMonster = new Monster("Ned", 50);
 		String report = theMonster.toString();
-		assertEquals("Monster Name: Ned -- Monster Health: 50", report);
+		assertEquals("Name: Ned -- Health: 50", report);
+	}
+	
+	/**
+	 * Test Monster constructor when value outsied precondition for health is supplied.
+	 * This test will use the toStringMethod output to verify
+	 * it was created correctly. Values used to create Monster: 
+	 * Name = Ned
+	 * Health = 50
+	 */
+	@Test
+	void testCreateNewMonsterNamedNedWithNeg50HealthExpect100Health() {
+		Monster theMonster = new Monster("Ned", -50);
+		String report = theMonster.toString();
+		assertEquals("Name: Ned -- Health: 100", report);
 	}
 
 }

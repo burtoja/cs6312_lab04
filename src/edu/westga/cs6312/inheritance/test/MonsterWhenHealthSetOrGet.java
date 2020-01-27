@@ -45,5 +45,23 @@ class MonsterWhenHealthSetOrGet {
 		int report = theMonster.getHealth();
 		assertEquals(75, report);
 	}
+	
+	/**
+	 * Test the setHealth method when invalid value sent.  
+	 * Make Monster with the following information 
+	 * set at creation then attempt to change the health to -75 using setHealth
+	 * and get its health using the getter:
+	 * Original Name: Carl
+	 * Health: 90
+	 * New Health Attempt: -75
+	 * Expected Result Health: 90
+	 */
+	@Test
+	void testMonsterSetHealthtoNeg75Expect90() {
+		Monster theMonster = new Monster("Carl", 90);
+		theMonster.setHealth(-75);
+		int report = theMonster.getHealth();
+		assertEquals(90, report);
+	}
 
 }
