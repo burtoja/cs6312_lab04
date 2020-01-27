@@ -1,7 +1,8 @@
 package edu.westga.cs6312.inheritance.model;
 
 /**
- * This class defines a subclass of Monster called a Zombie.
+ * This class defines Zombie objects and is a subclass of the Monster class.
+ * This class will keep up with the name, health, and sounds made by Zombie objects.
  * 
  * @author J. Allen Burton
  * @version Jan 26, 2020
