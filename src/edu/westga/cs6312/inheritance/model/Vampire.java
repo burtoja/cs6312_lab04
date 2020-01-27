@@ -25,7 +25,7 @@ public class Vampire extends Monster {
 	 * @precondition	health >= 0 (handled by super class constructor)
 	 * @precondition	pintsOfBloodNeeded >= 0 && pintsOfBloodNeeded <= 10
 	 */
-	public Vampire (String name, int health, int pintsOfBloodNeeded) {
+	public Vampire(String name, int health, int pintsOfBloodNeeded) {
 		super(name, health);
 		if (pintsOfBloodNeeded >= 0 && pintsOfBloodNeeded <= 10) {
 			this.pintsOfBloodNeeded = pintsOfBloodNeeded;
@@ -55,6 +55,8 @@ public class Vampire extends Monster {
 	
 	/**
 	 * Gets value of the pints of blood needed by the Vampire
+	 * 
+	 * @return the pints of blood needed by the Vampire
 	 *
 	 * @precondition	none
 	 */
@@ -76,7 +78,4 @@ public class Vampire extends Monster {
 		}
 	}
 	
-	
-	
-
 }
